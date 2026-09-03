@@ -6,7 +6,7 @@ for indice in range(len(eliminaciones)):
     print(eliminaciones[indice], end=" ")
 print()
 
-eliminaciones.pop()
+del eliminaciones[posicion - 1]
 
 print("Después de la eliminacion, el array es: ")
 for indice in range(len(eliminaciones)):
