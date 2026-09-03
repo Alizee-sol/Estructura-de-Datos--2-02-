@@ -12,13 +12,6 @@ for idx in range(len(eliminacion)):
     print(eliminacion[idx], end=" ")                 #Recorre los elementos del array
 print()
 
-#Recorrido de Arreglo (Sólo lo muestra) //////////////////////////////////////////////////////////////
-recorrido=[40,50,60,70,80,90]
-print("Recorrido lineal (secuencial) es: ", end="")
-for indice in recorrido:                              #Recorre el arreglo e imprime cada elemento
-    print(indice, end=" ")
-print()
-
 #insercion de un elemento en el indice 0 del arreglo /////////////////////////////////////////////////
 insercion=[11,21,31,41,51,61]
 ele=52
