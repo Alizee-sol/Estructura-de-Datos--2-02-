@@ -1,5 +1,3 @@
-package Java;
-
 public class Recorrido_secuencial_java {
     public static void main(String[] args) {
          int[] recorrido = {40,50,60,70,80,90};
