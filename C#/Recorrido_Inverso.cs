@@ -6,7 +6,7 @@ class Program {
         Console.Write("Recorrido inverso del array es: ");
         int largo = recorridoin.Length - 1;
         
-        for(int indice = largo; i >= 0; i--) 
+        for(int indice = largo; indice >= 0; indice--) 
         {
             Console.Write(recorridoin[indice] + " ");
         }
