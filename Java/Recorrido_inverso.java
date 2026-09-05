@@ -1,4 +1,4 @@
-public class Main {
+public class Recorrido_inverso {
     public static void main(String[] args) {
         //Declaración del array estático
         int[] recorridoin = {40, 50, 60, 70, 80, 90};
