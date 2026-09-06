@@ -19,7 +19,7 @@ class Program {
         //inserta el elemento en el índice 0
         insercionfin.Insert(largo -1, ele);
         
-        //recorre el arreglo con la insercionfin hecha
+        //recorre el arreglo con la insercion hecha
         Console.Write("Después de la inserción, el array es: ");
         for (int indice = 0; indice < largo; indice++) {
             Console.Write(insercionfin[indice] + " ");
