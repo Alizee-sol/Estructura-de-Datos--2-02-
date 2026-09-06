@@ -12,8 +12,9 @@ Array2d = [[1,2,3],
            [7,8,9]]
 k = 0
 
-for x in range(r):                   # X recorre el rango de R (3)
-    for y in range(c):               # Y recorre el rango de C (3)
+# Mismo recorrido pero primero recorremos Y (Columas), y luego los valores X en Y
+for y in range(r):                   # Y recorre el rango de R (3)
+    for x in range(c):               # X recorre el rango de C (3)
         k = x * r + y                # Formula para acomodar la matriz en una fila
         arr[k] = Array2d[x][y]       # Dejamos el valor de K en la array nueva
         k = k + 1
@@ -27,6 +28,6 @@ for row in Array2d:                  # Recorre renglones
 
 # Recorrido de la matriz 2d (En una sola línea, fila tras fila)
 print("\nLos elementos del array unidimensional son: ")
-for x in range(r):                   # X recorre el rango de R (3)
-    for y in range(c):               # Y recorre el rango de C (3)
+for y in range(r):                   # Y recorre el rango de R (3)
+    for x in range(c):               # X recorre el rango de C (3)
         print(arr[x * r + y], end=" ") 
