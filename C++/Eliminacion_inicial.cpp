@@ -15,10 +15,10 @@ int main() {
     }
     cout << endl;
     
-    //elimino el elemento al final del array
-    eliminaciones.pop_back();
+    //elimino el begin del array
+    eliminaciones.erase(eliminaciones.begin());
     
-    cout << "Después de la insersion en el final del array es: ";
+    cout << "Después de la eliminacion del indice 0 es: ";
     for (int indice = 0; indice < largo; indice++) {
         cout << eliminaciones[indice] << " ";
     }
