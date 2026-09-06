@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm> //libreria para sort
 
 using namespace std;
 
@@ -20,10 +21,11 @@ int findEle(int arreglo[], int izquierda, int derecha, int elemento) {
 
 int main() {
     int arreglo[] = {12, 34, 10, 6, 40, 89, 98, 57, 19, 69};
-    int elemento = 19;
+    int elemento = 40;
     // Calculamos el tamaño del arreglo
     int s = sizeof(arreglo) / sizeof(arreglo[0]);
     
+    sort(arreglo, arreglo + s);
     int indice = findEle(arreglo, 0, s - 1, elemento);
     
     if (indice != -1) {
