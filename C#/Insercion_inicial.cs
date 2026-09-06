@@ -15,5 +15,15 @@ class Program {
             Console.Write(insercion[indice] + " ");
         }
         Console.WriteLine();
+
+        //inserta el elemento en el índice 0
+        insercion.Insert(0, ele);
+        
+        //recorre el arreglo con la insercion hecha
+        Console.Write("Después de la eliminacion, el array es: ");
+        for (int indice = 0; indice < largo; indice++) {
+            Console.Write(insercion[indice] + " ");
+        }
+        Console.WriteLine();
     } 
 }
