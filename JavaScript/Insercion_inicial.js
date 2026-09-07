@@ -10,5 +10,13 @@ console.log("El arreglo antes de la insercion es: ");
 for (let indice = 0; indice < largo; indice++) {
     console.log(insercion[indice] + " ");
 }
+ // Empujo el ele al indice 0 y recorre el resto
+insercion.unshift(ele);
+
+// recorrido del resultado
+console.log("El arreglo antes de la insercion es: ");
+for (let indice = 0; indice < largo; indice++) {
+    console.log(insercion[indice] + " ");
+}
 
 console.log();
