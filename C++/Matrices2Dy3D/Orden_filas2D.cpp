@@ -27,7 +27,7 @@ int main() {
             }
         }
 
-    cout << "Los elementos del array son: ";
+    cout << "Los elementos del array bidimencional son: ";
     cout << endl;
     
     //auto% detecta en que renglon se encuentra
@@ -37,4 +37,12 @@ int main() {
         }
         cout << endl;
     }
+
+    cout << "Los elementos del array unidimensional son: ";
+    for (int x = 0; x < xs; x++) {
+        for (int y = 0; y < ys; y++) {
+            cout << arr[x * xs + y] << " ";
+        }
+    }
+    cout << endl;
 }
