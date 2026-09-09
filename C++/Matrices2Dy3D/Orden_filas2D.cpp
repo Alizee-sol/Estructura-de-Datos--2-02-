@@ -16,6 +16,17 @@ int main() {
         {7, 8, 9}
     };
 
+    int k = 0;
+        for (int x = 0; x < xs; x++) 
+        {
+            for (int y = 0; y < ys; y++) 
+            {
+                k = x * xs + y;
+                arr[k] = Array2d[x][y];
+                k = k + 1;
+            }
+        }
+
     cout << "Los elementos del array son: ";
     cout << endl;
     
