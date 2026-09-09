@@ -5,6 +5,10 @@ using namespace std;
 
 int main() {
 
+    int xs = 3, ys = 3;
+    //vector con (tamaño)
+    vector<int> arr(xs * ys, 0);
+
     //Declaracion de array2d (3*3)
     int Array2d[3][3] = {
         {1, 2, 3},
