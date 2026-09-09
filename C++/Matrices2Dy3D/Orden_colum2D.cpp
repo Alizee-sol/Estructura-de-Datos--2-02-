@@ -18,9 +18,9 @@ int main() {
 
     //formula de acomodo de Array2d en vector (arr)
     int k = 0;
-        for (int x = 0; x < xs; x++) 
+        for (int y = 0; y < ys; y++) 
         {
-            for (int y = 0; y < ys; y++) 
+            for (int x = 0; x < xs; x++) 
             {
                 k = x * xs + y;
                 arr[k] = Array2d[x][y];
@@ -40,8 +40,8 @@ int main() {
 
     //Recorrido del vector final
     cout << "Los elementos del array unidimensional son: ";
-    for (int x = 0; x < xs; x++) {
-        for (int y = 0; y < ys; y++) {
+    for (int y = 0; y < ys; y++) {
+        for (int x = 0; x < xs; x++) {
             cout << arr[x * xs + y] << " ";
         }
     }
