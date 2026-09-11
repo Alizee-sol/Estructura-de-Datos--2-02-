@@ -11,8 +11,8 @@ const Array2d = [
 
 //formula para vaciar array 2d en fila 1d
 let k = 0;
-for (let x = 0; x < xs; x++) {
-    for (let y = 0; y < ys; y++) {
+for (let y = 0; y < ys; y++) {
+    for (let x = 0; x < xs; x++) {
         k = x * xs + y;
         arr[k] = Array2d[x][y];
         k = k + 1;
@@ -31,8 +31,8 @@ for (const row of Array2d) {
 
 //arreglo en fila 1d
 console.log("Los elementos del array unidimensional son: ");
-for (let x = 0; x < xs; x++) {
-    for (let y = 0; y < ys; y++) {
+for (let y = 0; y < ys; y++) {
+    for (let x = 0; x < xs; x++) {
         console.log(arr[x * xs + y] + " ");
     }
 }
