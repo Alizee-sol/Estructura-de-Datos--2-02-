@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        //Declaracion de array2d
+        
         int[][] Array2d = new int[][] 
         {
             new int[] {1, 2, 3},
