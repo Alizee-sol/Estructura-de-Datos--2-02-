@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Declaracion del array tablero (8*8 lugares)
-//De tipo char para usar codigo ascii
+//Declaracion global del array tablero (8*8 lugares) tipo char
 char tablero[8][8];
 
 void iniciaTablero()
@@ -34,7 +33,7 @@ void iniciaTablero()
     }
 }
 void mostrarTablero() 
-{
+{  
     //Recorrido de filas para mostrar número en Y
     for (int num = 0; num < 8; num++) 
     {
@@ -50,10 +49,42 @@ void mostrarTablero()
     cout << "   A  B  C  D  E  F  G  H";
 }
 
+void turno()
+{
+
+}
+
+void ganador()
+{
+
+}
+
+
 int main()
 {
-    iniciaTablero();
-    mostrarTablero();
+    int opc = 0;
+    while(opc != 2)
+    {
+        cout << "\n+---+---+---+ JUEGO DE LAS DAMAS +---+---+---+" << endl;
+        cout << "1. Comenzar" << endl;
+        cout << "2. Salir" << endl;
+        cin >> opc;
+        if (opc == 1)
+        {
+            cout << "\n El juego ha iniciado" << endl;
+            iniciaTablero();
+            mostrarTablero();
+            turno();
+            ganador(); 
+            opc = 0;
+        }
+        else
+        {
+            cout << "Opción desconocida."; 
+            opc = 0;
+        }
+    } 
+    cout << "\n Saliendo del juego...";
 
     return 0;
 }
