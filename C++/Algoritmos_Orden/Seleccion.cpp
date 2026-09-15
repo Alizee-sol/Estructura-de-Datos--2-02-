@@ -6,21 +6,22 @@ void selection(int arreglo[], int largo)
 {
     for (int i = 0; i < largo; i++) 
     {
-        //Small = indice del elemento pequeño acomodado
+        //Small = elemento pequeño
         int small = i;
         //Recorre los elementos a partir del siguiente al Small
         for (int j = i + 1; j < largo; j++) 
         {
-            //Si small es mayor al nuevo elemento, este se convierte en small
+            //Recorre uno por uno boscando el menor
             if (arreglo[small] > arreglo[j]) 
             {
+                //Guarda el menor
                 small = j;
             }
         }
         //Intercambio 
-        int temp = arreglo[i];
-        arreglo[i] = arreglo[small];
-        arreglo[small] = temp;
+        int temp = arreglo[i];        //vacía i 
+        arreglo[i] = arreglo[small];  //le da a i el valor de small
+        arreglo[small] = temp;        //le da a small el valor de i
     }
 }
 
