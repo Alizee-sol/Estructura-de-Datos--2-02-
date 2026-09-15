@@ -35,7 +35,7 @@ int main() {
     int arr[] = {65, 26, 13, 23, 12};
     int lar = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Arrelo antes de ser ordenado: \n";
+    cout << "Arreglo antes de ser ordenado: \n";
     printArr(arr, lar);
     
     selection(arr, lar);
