@@ -11,7 +11,7 @@ void selection(int arreglo[], int largo)
         //Recorre los elementos a partir del siguiente al Small
         for (int j = i + 1; j < largo; j++) 
         {
-            //Recorre uno por uno boscando el menor
+            //Recorre uno por uno buscando el menor
             if (arreglo[small] > arreglo[j]) 
             {
                 //Guarda el menor
