@@ -26,8 +26,6 @@ printArr(a);
 
 selection(a);
 
-// Simulamos el salto de línea
-console.log(""); 
 console.log("Arreglo después de ser ordenado: ");
 selection(a);
 printArr(a);
