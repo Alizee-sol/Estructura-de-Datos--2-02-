@@ -2,20 +2,33 @@
 
 using namespace std;
 
-void Particion(int[] a, int l, int h)
-{
+void swap(int a[], int j, int k) 
+    {
+        int temp = a[j];
+        a[j] = a[k];
+        a[k] = temp;
+    }
+
+int partition(int a[], int l, int h) {
     int pvt = a[h];
     int j = l - 1;
+    for (int k = l; k < h; k++) {
+        if (a[k] < pvt) {
+            j++;
+            swap(a, j, k);
+        }
+    }
+    swap(a, j + 1, h);
+    return j + 1;
 }
 
-void QckSort(int a[], int l, int h)
+void qckSort(int a[], int l, int h) 
 {
-    if (l < h)
-        {
-            int pi = Particion(a, l, h);
-            QckSort(a, l, pi - 1);
-            QckSort(a, pi + 1, h);
-        }
+    if (l < h) {
+        int pi = partition(a, l, h);
+        qckSort(a, l, pi - 1);
+        qckSort(a, pi + 1, h);
+    }
 }
 
 int main()
@@ -29,7 +42,7 @@ int main()
         cout << arreglo[indice] << " ";
     }
 
-    QckSort(arreglo, 0, largo - 1);
+    qckSort(arreglo, 0, largo - 1);
 
     cout << "\nEl arreglo despues de ordenar es: " << endl;
     for (int indice = 0; indice < largo; indice++)
